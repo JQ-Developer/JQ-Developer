@@ -57,4 +57,7 @@ export const FooterContainer = styled.footer`
   @media ${device.tablet} {
     font-size: 0.8rem;
   }
+  @media ${device.mobileL} {
+    margin-top: 10rem;
+  }
 `;

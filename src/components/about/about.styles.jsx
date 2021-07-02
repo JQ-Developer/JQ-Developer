@@ -37,7 +37,8 @@ export const AboutComponentContainer = styled.div`
     margin-bottom: 2rem;
   }
   @media ${device.mobileM} {
-    margin-top: -2rem;
+    margin-top: -5rem;
+    margin-bottom: 0rem;
   }
 
   @media ${device.mobileS} {
