@@ -13,7 +13,7 @@ const ContactComponent = () => {
   const [containerRef, isVisible] = useElementOnScreen({
     root: null,
     rootMargin: "0px",
-    threshold: 0.2,
+    threshold: 0.1,
   });
   return (
     <ContactContainer

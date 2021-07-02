@@ -60,4 +60,8 @@ export const FooterContainer = styled.footer`
   @media ${device.mobileL} {
     margin-top: 10rem;
   }
+
+  @media ${device.mobileM} {
+    margin-top: 6rem;
+  }
 `;

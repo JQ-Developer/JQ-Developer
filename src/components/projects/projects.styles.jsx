@@ -129,6 +129,10 @@ export const ProjectCard = styled.div`
     ${(props) => (props.odd ? "" : "")}
   }
 
+  @media ${device.mobileS} {
+    margin: 2rem 0;
+  }
+
   @media (min-width: 861px) {
     ${(props) => (props.odd ? "margin-top:-18rem" : "")}
   } ;
@@ -188,6 +192,9 @@ export const ProjectDescription = styled.div`
   font-weight: 500;
   line-height: 1.5;
   color: ${(props) => props.theme.color.slate};
+  @media ${device.mobileS} {
+    font-size: 0.9rem;
+  }
 `;
 
 //////////////////////////////////
