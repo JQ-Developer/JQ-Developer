@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import NavigationComponent from "./components/navigation/navigation.component";
+import HeaderComponent from "./components/header/header.component";
+import AboutComponent from "./components/about/about.component";
+import ProjectsComponent from "./components/projects/projects.component";
+import SkillsetComponent from "./components/skillset/skillset.component";
+import ContactComponent from "./components/contact/contact.component";
+import { ThemeProvider } from "styled-components";
+import theme from "./global-styles/theme";
+
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <NavigationComponent />
+      <HeaderComponent />
+      <AboutComponent />
+      <ProjectsComponent />
+      <SkillsetComponent />
+      <ContactComponent />
+    </ThemeProvider>
   );
 }
 
