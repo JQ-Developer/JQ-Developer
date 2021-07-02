@@ -115,6 +115,10 @@ export const NameContainer = styled.h1`
   @media ${device.mobileM} {
     font-size: 3rem;
   }
+
+  @media ${device.mobileS} {
+    font-size: 2.5rem;
+  }
 `;
 
 export const DescriptionContainer = styled.div`
@@ -137,6 +141,10 @@ export const DescriptionContainer = styled.div`
   @media ${device.mobileM} {
     font-size: 1.2rem;
   }
+
+  @media (max-width: 650px) {
+    font-size: 1rem;
+  }
 `;
 
 export const TextContainer = styled.p`
@@ -157,6 +165,9 @@ export const TextContainer = styled.p`
 
   @media ${device.mobileM} {
     font-size: 0.9rem;
+  }
+  @media ${device.mobileS} {
+    font-size: 0.8rem;
   }
 `;
 

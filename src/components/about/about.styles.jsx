@@ -9,6 +9,7 @@ export const AboutComponentContainer = styled.div`
   text-align: center;
   margin-bottom: 5rem;
   margin-top: 0.5rem;
+  z-index: 15;
 
   h3 {
     margin-bottom: 2rem;
@@ -32,9 +33,14 @@ export const AboutComponentContainer = styled.div`
   }
 
   @media ${device.mobileL} {
-    margin-top: -5rem;
+    margin-top: -7rem;
+    margin-bottom: 2rem;
   }
   @media ${device.mobileM} {
     margin-top: -2rem;
+  }
+
+  @media ${device.mobileS} {
+    margin-top: 0rem;
   }
 `;

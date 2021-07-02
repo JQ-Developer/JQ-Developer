@@ -9,6 +9,7 @@ export const SkillsetComponentContainer = styled.section`
     margin-bottom: 2rem;
   }
   padding-top: 90px;
+  margin-top: -90px;
 `;
 
 export const SkillGrid = styled.div`

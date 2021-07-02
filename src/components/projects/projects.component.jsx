@@ -38,7 +38,7 @@ const ProjectsComponent = () => {
 
   return (
     <ProjectsContainer id="projects">
-      <Dots width="300px" top="-10%" left="75%">
+      <Dots width="300px" top="5%" left="75%">
         <img src="https://svgsilh.com/svg/26432.svg" />
       </Dots>
       <ProjectsGrid>
