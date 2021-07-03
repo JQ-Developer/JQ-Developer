@@ -65,7 +65,11 @@ const HeaderComponent = () => {
             <FaLinkedin className="icon" />
             <p>Linkdln</p>
           </Links>
-          <Links target="_blank" title="email" href="#" margin="0 1.3rem 0 0">
+          <Links
+            title="email"
+            href="mailto:jqv.developer@gmail.com"
+            margin="0 1.3rem 0 0"
+          >
             <FaEnvelope className="icon" />
             <p>Email</p>
           </Links>

@@ -28,16 +28,23 @@ const ContactComponent = () => {
           <Emphasis> Front-End Developer.</Emphasis>
         </p>
         <p>Let's get in touch and talk more about your projects.</p>
+        <p>
+          <Emphasis>jqv.developer@gmail.com</Emphasis>
+        </p>
       </DescriptionContainer>
       <ContactLinksContainer
         className={isVisible ? "visible" : ""}
         align="center"
       >
-        <Links href="#" margin="0.5rem">
+        <Links href="mailto:jqv.developer@gmail.com" margin="0.5rem">
           <FaEnvelope className="icon" />
           <p>Email</p>
         </Links>
-        <Links href="#" margin="0.5rem">
+        <Links
+          href="https://www.linkedin.com/in/jos%C3%A9-quintero-varela-b3b932206/"
+          target="_blanked"
+          margin="0.5rem"
+        >
           <FaLinkedin className="icon" />
           <p>Linkdln</p>
         </Links>
@@ -50,7 +57,7 @@ const ContactComponent = () => {
         <p>Designed and Developed by José Quintero.</p>
         <p>
           Built with
-          <Emphasis> React.js</Emphasis> . Hosted on Netlify.
+          <Emphasis> React.js</Emphasis> . Hosted on Github Pages.
         </p>
         <p>
           <Emphasis>2021</Emphasis>

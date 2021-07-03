@@ -61,9 +61,14 @@ const ProjectsComponent = () => {
         </DescriptionContainer>
 
         <ProjectCard className={isVisible ? "visible" : ""}>
-          <ImageContainer>
-            <img src={eShop} alt="E-eshop" />
-          </ImageContainer>
+          <a
+            target="_blanked"
+            href="https://great-clothes-store.herokuapp.com/"
+          >
+            <ImageContainer>
+              <img src={eShop} alt="E-eshop" />
+            </ImageContainer>
+          </a>
 
           <CardText>
             <CardTitle>
@@ -97,17 +102,19 @@ const ProjectsComponent = () => {
 
             <ProjectDescription>
               A digital shop that allows users to buy clothes, stripe pay system
-              integrated, made using redux-sagas. Includes CRUD, FireBase data
-              base and google Gmail for authentication, and styled with Styled
+              integrated, made using redux-sagas. Includes CRUD, FireBase as
+              data base and google Gmail for authentication. Styled with Styled
               Components.
             </ProjectDescription>
           </CardText>
         </ProjectCard>
 
         <ProjectCard odd="odd" className={isVisible ? "visible" : ""}>
-          <ImageContainer>
-            <img src={countries} alt="countries Api" />
-          </ImageContainer>
+          <a href="https://countries-rest-api-react.vercel.app/">
+            <ImageContainer>
+              <img src={countries} alt="countries Api" />
+            </ImageContainer>
+          </a>
 
           <CardText>
             <CardTitle>
@@ -157,9 +164,11 @@ const ProjectsComponent = () => {
         </ProjectCard>
 
         <ProjectCard className={isVisible ? "visible" : ""}>
-          <ImageContainer>
-            <img src={landingPage} alt="landingPage" />
-          </ImageContainer>
+          <a href="https://challenge-2-landing-page.vercel.app/">
+            <ImageContainer>
+              <img src={landingPage} alt="landingPage" />
+            </ImageContainer>
+          </a>
 
           <CardText>
             <CardTitle>

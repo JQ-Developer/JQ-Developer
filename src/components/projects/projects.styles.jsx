@@ -141,11 +141,18 @@ export const ProjectCard = styled.div`
 export const ImageContainer = styled.div`
   width: 100%;
   max-height: 260px;
+  overflow: hidden;
   img {
     width: 100%;
     max-height: 260px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+
+    transition: transform 1.5s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 `;
 
