@@ -46,15 +46,26 @@ const HeaderComponent = () => {
           className={isVisible ? "visible" : ""}
           align="flex-start"
         >
-          <Links href="#" margin="0 1.3rem 0 0">
+          <Links
+            target="_blank"
+            href="https://github.com/JQ-Developer"
+            title="github"
+            margin="0 1.3rem 0 0"
+          >
             <FaGithub className="icon" />
+            <title>github</title>
             <p>Github</p>
           </Links>
-          <Links href="#" margin="0 1.3rem 0 0">
+          <Links
+            target="_blank"
+            href="https://www.linkedin.com/in/jos%C3%A9-quintero-varela-b3b932206/"
+            title="linkedin"
+            margin="0 1.3rem 0 0"
+          >
             <FaLinkedin className="icon" />
             <p>Linkdln</p>
           </Links>
-          <Links href="#" margin="0 1.3rem 0 0">
+          <Links target="_blank" title="email" href="#" margin="0 1.3rem 0 0">
             <FaEnvelope className="icon" />
             <p>Email</p>
           </Links>

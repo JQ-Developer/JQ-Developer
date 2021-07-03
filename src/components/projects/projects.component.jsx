@@ -12,6 +12,9 @@ import {
   JsTag,
   ReactTag,
   SassTag,
+  ReduxTag,
+  StyledCompTag,
+  FirebaseTag,
   SectionTitle,
   SectionDescription,
   Dots,
@@ -25,9 +28,11 @@ import {
   FaReact,
   FaSass,
 } from "react-icons/fa";
+import { SiRedux, SiStyledComponents, SiFirebase } from "react-icons/si";
+
 import countries from "../../assets/projects/country.png";
-import dice from "../../assets/dice.png";
-import land from "../../assets/land.png";
+import eShop from "../../assets/projects/e-shop.png";
+import landingPage from "../../assets/projects/clipboard.png";
 
 const ProjectsComponent = () => {
   const [containerRef, isVisible] = useElementOnScreen({
@@ -54,63 +59,82 @@ const ProjectsComponent = () => {
             See More <FaLongArrowAltRight className="icon" />
           </a>
         </DescriptionContainer>
+
         <ProjectCard className={isVisible ? "visible" : ""}>
           <ImageContainer>
-            <img src={countries} alt="girl" />
+            <img src={eShop} alt="E-eshop" />
           </ImageContainer>
 
           <CardText>
             <CardTitle>
-              <h3>Rest Country API</h3>
+              <h3>Crwon E-Shop</h3>
               <div>
-                <a href="">
+                <a
+                  target="_blanked"
+                  title="live sample"
+                  href="https://great-clothes-store.herokuapp.com/"
+                >
                   <FaExternalLinkAlt className="icon" />
                 </a>
-                <a href="">
-                  <FaGithub className="icon" />
-                </a>
+                <FaGithub className="icon" />
               </div>
             </CardTitle>
 
             <TechnologiesTag>
-              <JsTag>
-                <FaJs />
-                <p>JavaScript</p>
-              </JsTag>
-
               <ReactTag>
                 <FaReact />
                 <p>React</p>
               </ReactTag>
-
-              <SassTag>
-                <FaSass />
-                <p>Sass</p>
-              </SassTag>
+              <ReduxTag>
+                <SiRedux />
+                <p>Redux</p>
+              </ReduxTag>
+              <FirebaseTag>
+                <SiFirebase />
+                <p>Firebase</p>
+              </FirebaseTag>
             </TechnologiesTag>
 
             <ProjectDescription>
-              A website that provides roadmap for various fields in Programming
-              and help people learn to code for free.
+              A digital shop that allows users to buy clothes, stripe pay system
+              integrated, made using redux-sagas. Includes CRUD, FireBase data
+              base and google Gmail for authentication, and styled with Styled
+              Components.
             </ProjectDescription>
           </CardText>
         </ProjectCard>
 
         <ProjectCard odd="odd" className={isVisible ? "visible" : ""}>
           <ImageContainer>
-            <img src={land} alt="girl" />
+            <img src={countries} alt="countries Api" />
           </ImageContainer>
 
           <CardText>
             <CardTitle>
               <h3>Rest Country API</h3>
               <div>
-                <FaExternalLinkAlt className="icon" />
-                <FaGithub className="icon" />
+                <a
+                  href="https://countries-rest-api-react.vercel.app/"
+                  target="_blanked"
+                  title="live sample"
+                >
+                  <FaExternalLinkAlt className="icon" />
+                </a>
+                <a
+                  target="_blanked"
+                  title="github code"
+                  href="https://github.com/JQ-Developer/countries-rest-api"
+                >
+                  <FaGithub className="icon" />
+                </a>
               </div>
             </CardTitle>
 
             <TechnologiesTag>
+              <SassTag>
+                <FaSass />
+                <p>Sass</p>
+              </SassTag>
               <JsTag>
                 <FaJs />
                 <p>JavaScript</p>
@@ -120,54 +144,60 @@ const ProjectsComponent = () => {
                 <FaReact />
                 <p>React</p>
               </ReactTag>
-
-              <SassTag>
-                <FaSass />
-                <p>Sass</p>
-              </SassTag>
             </TechnologiesTag>
 
             <ProjectDescription>
-              A website that provides roadmap for various fields in Programming
-              and help people learn to code for free.
+              A web app that integrates the REST Countries API to pull country
+              data and display it, users are able to see all countries from the
+              API on the homepage, click on a country and see more detailed
+              information and much more,it's also totally responsible, see the
+              live sample!
             </ProjectDescription>
           </CardText>
         </ProjectCard>
 
         <ProjectCard className={isVisible ? "visible" : ""}>
           <ImageContainer>
-            <img src={dice} alt="girl" />
+            <img src={landingPage} alt="landingPage" />
           </ImageContainer>
 
           <CardText>
             <CardTitle>
-              <h3>Rest Country API</h3>
+              <h3>Clipboard Landing Page</h3>
               <div>
-                <FaExternalLinkAlt className="icon" />
-                <FaGithub className="icon" />
+                <a
+                  href="https://challenge-2-landing-page.vercel.app/"
+                  target="_blanked"
+                  title="live sample"
+                >
+                  <FaExternalLinkAlt className="icon" />
+                </a>
+                <a
+                  target="blanked"
+                  title="github code"
+                  href="https://github.com/JQ-Developer/Challenge-2-Landing-page"
+                >
+                  <FaGithub className="icon" />
+                </a>
               </div>
             </CardTitle>
 
             <TechnologiesTag>
-              <JsTag>
-                <FaJs />
-                <p>JavaScript</p>
-              </JsTag>
-
-              <ReactTag>
-                <FaReact />
-                <p>React</p>
-              </ReactTag>
-
               <SassTag>
                 <FaSass />
                 <p>Sass</p>
               </SassTag>
+              <JsTag>
+                <FaJs />
+                <p>JavaScript</p>
+              </JsTag>
             </TechnologiesTag>
 
             <ProjectDescription>
-              A website that provides roadmap for various fields in Programming
-              and help people learn to code for free.
+              Landing page as part of a challenge, where users are able to view
+              the optimal layout for the site depending on their device's screen
+              size and see hover states for all interactive elements on the
+              page.
             </ProjectDescription>
           </CardText>
         </ProjectCard>

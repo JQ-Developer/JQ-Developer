@@ -36,12 +36,6 @@ const SkillsetComponent = () => {
         </SkillCard>
         <SkillCard>
           <ImageContainer>
-            <img src={sassLogo} alt="sass" />
-          </ImageContainer>
-          <SkillDescription>Sass</SkillDescription>
-        </SkillCard>
-        <SkillCard>
-          <ImageContainer>
             <img src={JavaScriptLogo} alt="ES6+" />
           </ImageContainer>
           <SkillDescription>ES6+</SkillDescription>
@@ -57,6 +51,12 @@ const SkillsetComponent = () => {
             <img src={reduxLogo} alt="redux" />
           </ImageContainer>
           <SkillDescription>Redux</SkillDescription>
+        </SkillCard>
+        <SkillCard>
+          <ImageContainer>
+            <img src={sassLogo} alt="sass" />
+          </ImageContainer>
+          <SkillDescription>Sass</SkillDescription>
         </SkillCard>
         <SkillCard>
           <ImageContainer>

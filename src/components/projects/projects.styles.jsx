@@ -140,10 +140,10 @@ export const ProjectCard = styled.div`
 
 export const ImageContainer = styled.div`
   width: 100%;
-  //height: 260px;
+  max-height: 260px;
   img {
     width: 100%;
-    height: 100%;
+    max-height: 260px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
   }
@@ -236,4 +236,22 @@ export const SassTag = styled.div`
   ${TagsStyles}
   color: #ffa2b2;
   background-color: #fad1d849;
+`;
+
+export const ReduxTag = styled.div`
+  ${TagsStyles}
+  color: #f358f3;
+  background-color: #f5aaf544;
+`;
+
+export const StyledCompTag = styled.div`
+  ${TagsStyles}
+  color: #fdd8df;
+  background-color: #bda2a746;
+`;
+
+export const FirebaseTag = styled.div`
+  ${TagsStyles}
+  color: #ffd900;
+  background-color: #ffa92945;
 `;
