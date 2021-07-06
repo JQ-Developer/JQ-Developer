@@ -77,11 +77,17 @@ const ProjectsComponent = () => {
                 <a
                   target="_blanked"
                   title="live sample"
-                  href="https://great-clothes-store.herokuapp.com/"
+                  href="https://portfolio-e-commerce.herokuapp.com/"
                 >
                   <FaExternalLinkAlt className="icon" />
                 </a>
-                <FaGithub className="icon" />
+                <a
+                  target="_blanked"
+                  title="live sample"
+                  href="https://github.com/JQ-Developer/e-commerce-protfolio"
+                >
+                  <FaGithub className="icon" />
+                </a>
               </div>
             </CardTitle>
 
