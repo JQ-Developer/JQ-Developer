@@ -1,4 +1,4 @@
-# Jose Quntero
+# Jose Quintero
 
 Hey! I'm José Quintero, I've been close to a computer since an early age, and been passionate about it ever since.
 
