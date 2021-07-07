@@ -8,6 +8,7 @@ import {
 
 import { Burger, Menu } from "../burger-menu";
 import { useRef, useState } from "react";
+import logo from "../../assets/50x50.png";
 
 const NavigationComponent = () => {
   const [open, setOpen] = useState(false);
@@ -30,9 +31,10 @@ const NavigationComponent = () => {
         <LogoContainer
           ref={containerRef}
           className={isVisible ? "visible" : ""}
+          href="/"
         >
-          JQ
-        </LogoContainer>
+          <img src={logo} alt="logo" />
+        </LogoContainer>{" "}
         <LinksContainer
           ref={containerRef}
           className={isVisible ? "visible" : ""}

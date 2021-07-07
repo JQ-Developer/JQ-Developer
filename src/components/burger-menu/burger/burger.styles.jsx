@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../../../global-styles/breakpoints";
 
 export const StyledBurger = styled.button`
   position: absolute;
@@ -45,5 +46,10 @@ export const StyledBurger = styled.button`
 
   @media (min-width: 861px) {
     display: none;
+  }
+
+  @media ${device.mobileL} {
+    top: 0.6rem;
+    right: 0.8rem;
   }
 `;

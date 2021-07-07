@@ -7,11 +7,12 @@ import ContactComponent from "./components/contact/contact.component";
 import { ThemeProvider } from "styled-components";
 import theme from "./global-styles/theme";
 
-import "./App.css";
+import { GlobalStyle } from "./global-styles/app.styles";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
+      <GlobalStyle />
       <NavigationComponent />
       <HeaderComponent />
       <AboutComponent />

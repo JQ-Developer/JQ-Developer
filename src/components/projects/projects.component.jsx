@@ -63,7 +63,7 @@ const ProjectsComponent = () => {
         <ProjectCard className={isVisible ? "visible" : ""}>
           <a
             target="_blanked"
-            href="https://great-clothes-store.herokuapp.com/"
+            href="https://portfolio-e-commerce.herokuapp.com/"
           >
             <ImageContainer>
               <img src={eShop} alt="E-eshop" />
@@ -83,7 +83,7 @@ const ProjectsComponent = () => {
                 </a>
                 <a
                   target="_blanked"
-                  title="live sample"
+                  title="github code"
                   href="https://github.com/JQ-Developer/e-commerce-protfolio"
                 >
                   <FaGithub className="icon" />
@@ -116,7 +116,10 @@ const ProjectsComponent = () => {
         </ProjectCard>
 
         <ProjectCard odd="odd" className={isVisible ? "visible" : ""}>
-          <a href="https://countries-rest-api-react.vercel.app/">
+          <a
+            target="_blanked"
+            href="https://countries-rest-api-react.vercel.app/"
+          >
             <ImageContainer>
               <img src={countries} alt="countries Api" />
             </ImageContainer>
@@ -170,7 +173,10 @@ const ProjectsComponent = () => {
         </ProjectCard>
 
         <ProjectCard className={isVisible ? "visible" : ""}>
-          <a href="https://challenge-2-landing-page.vercel.app/">
+          <a
+            target="_blanked"
+            href="https://challenge-2-landing-page.vercel.app/"
+          >
             <ImageContainer>
               <img src={landingPage} alt="landingPage" />
             </ImageContainer>

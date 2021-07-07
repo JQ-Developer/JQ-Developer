@@ -10,6 +10,9 @@ export const NavigationContainer = styled.div`
   top: 0;
   width: 100vw;
   z-index: 100;
+  @media ${device.mobileL} {
+    height: 50px;
+  }
 `;
 
 export const Navigation = styled.nav`
@@ -24,12 +27,19 @@ export const Navigation = styled.nav`
   justify-content: space-between;
 `;
 
-export const LogoContainer = styled.div`
+export const LogoContainer = styled.a`
   font-size: 2rem;
   font-weight: 600;
 
   transition: all 0.5s ease-in-out;
   transform: scale(0.7);
+  width: 50px;
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 100%;
+  }
 
   opacity: 0;
 
@@ -41,6 +51,11 @@ export const LogoContainer = styled.div`
   @media ${device.tablet} {
     transform: translateY(0);
     opacity: 1;
+  }
+
+  @media ${device.mobileL} {
+    width: 40px;
+    transform: translateX(-25px);
   }
 `;
 

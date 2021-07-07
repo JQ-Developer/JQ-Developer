@@ -142,13 +142,15 @@ export const ImageContainer = styled.div`
   width: 100%;
   max-height: 260px;
   overflow: hidden;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   img {
     width: 100%;
     max-height: 260px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 
-    transition: transform 1.5s ease;
+    transition: transform 0.8s ease;
 
     &:hover {
       transform: scale(1.05);
