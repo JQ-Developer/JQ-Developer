@@ -48,10 +48,6 @@ const ContactComponent = () => {
           <FaLinkedin className="icon" />
           <p>Linkdln</p>
         </Links>
-        <Links href="#" margin="0.5rem">
-          <FaFileAlt className="icon" />
-          <p>Resume</p>
-        </Links>
       </ContactLinksContainer>
       <FooterContainer>
         <p>Designed and Developed by José Quintero.</p>
